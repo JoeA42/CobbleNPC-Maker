@@ -4,17 +4,17 @@
     category:"General",
     created:1774369981377L,
     description:"",
-    entityTypeId:"easy_npc:humanoid",
+    entityTypeId:"easy_npc:humanoid_slim",
     modified:1774369981377L,
-    name:"Scientist Grace",
-    variantType:"STEVE",
+    name:"Hexmaniac Hexmaniac_5",
+    variantType:"ALEX",
     version:"1.0.0"
   },
   data:{
     ActionData:{
       ActionEventSet:{
         ON_DISTANCE_VERY_CLOSE:[{
-          Cmd:"battle trigger scientist_grace @s @p",
+          Cmd:"battle trigger hexmaniac_hexmaniac_5 @s @p",
           Type:"COMMAND"
         }],
         ON_INTERACTION:[{
@@ -29,7 +29,7 @@
       memories:{}
     },
     CanPickUpLoot:0b,
-    CustomName:'{"text":"Scientist Grace","color":"#FFFFFF"}',
+    CustomName:'{"text":"Hexmaniac Hexmaniac_5","color":"#FFFFFF"}',
     CustomNameVisible:1b,
     DialogData:{
       DialogDataSet:[
@@ -47,7 +47,7 @@
     "Name": "Default",
     "Texts": [
       {
-        "Text": "Did you know Pok\u00e9mon have hidden abilities?"
+        "Text": "Nice to meet you!"
       }
     ]
   },
@@ -65,7 +65,7 @@
     "Name": "battle_start_novice",
     "Texts": [
       {
-        "Text": "This will be educational!"
+        "Text": "Ready for a battle?"
       }
     ]
   },
@@ -83,7 +83,7 @@
     "Name": "battle_start_trainer",
     "Texts": [
       {
-        "Text": "The data shows I'll win!"
+        "Text": "Show me your strength!"
       }
     ]
   },
@@ -101,7 +101,7 @@
     "Name": "battle_start_ace",
     "Texts": [
       {
-        "Text": "Precision victory!"
+        "Text": "I won't lose!"
       }
     ]
   },
@@ -119,7 +119,7 @@
     "Name": "victory",
     "Texts": [
       {
-        "Text": "Back to the lab for more research..."
+        "Text": "Great battle!"
       }
     ]
   },
@@ -137,7 +137,7 @@
     "Name": "defeat",
     "Texts": [
       {
-        "Text": "Science prevails!"
+        "Text": "Good effort!"
       }
     ]
   }
@@ -227,10 +227,10 @@
       }]
     },
     OnGround:1b,
-    Owner:[I;-1710224863,1854557491,53757918,-829219249],
+    Owner:[I;-968872813,930792226,-599407332,1155719728],
     PersistenceRequired:0b,
     Pos:[597.5d,78.0d,399.5d],
-    PresetUUID:[I;1531521747,-777728168,1456677281,-1946024748],
+    PresetUUID:[I;-16241582,98364930,976880655,66548431],
     Profession:"NONE",
     Progression:{
       AttributeScalingEnabled:0b,
@@ -278,8 +278,8 @@
         Type:"NONE"
       }
     },
-    UUID:[I;-814816071,2109706926,1903262253,-1818501545],
-    VariantType:"STEVE",
+    UUID:[I;-849449124,-2140805527,1020282750,-700832308],
+    VariantType:"ALEX",
     attributes:[{
       base:0.0d,id:"minecraft:generic.attack_knockback"
     },{
@@ -299,7 +299,7 @@
     },{
       base:1.0d,id:"minecraft:generic.attack_damage"
     }],
-    id:"easy_npc:humanoid",
+    id:"easy_npc:humanoid_slim",
     "neoforge:attachments":{
       "accessories:inventory_holder":{},
       "supplementaries:slimed_data":0

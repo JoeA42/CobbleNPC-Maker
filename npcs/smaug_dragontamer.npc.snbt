@@ -6,7 +6,7 @@
     description:"",
     entityTypeId:"easy_npc:humanoid",
     modified:1774369981377L,
-    name:"Scientist Grace",
+    name:"Dragontamer Smaug",
     variantType:"STEVE",
     version:"1.0.0"
   },
@@ -14,7 +14,7 @@
     ActionData:{
       ActionEventSet:{
         ON_DISTANCE_VERY_CLOSE:[{
-          Cmd:"battle trigger scientist_grace @s @p",
+          Cmd:"battle trigger dragontamer_smaug @s @p",
           Type:"COMMAND"
         }],
         ON_INTERACTION:[{
@@ -29,7 +29,7 @@
       memories:{}
     },
     CanPickUpLoot:0b,
-    CustomName:'{"text":"Scientist Grace","color":"#FFFFFF"}',
+    CustomName:'{"text":"Dragontamer Smaug","color":"#FFFFFF"}',
     CustomNameVisible:1b,
     DialogData:{
       DialogDataSet:[
@@ -47,7 +47,7 @@
     "Name": "Default",
     "Texts": [
       {
-        "Text": "Did you know Pok\u00e9mon have hidden abilities?"
+        "Text": "Nice to meet you!"
       }
     ]
   },
@@ -65,7 +65,7 @@
     "Name": "battle_start_novice",
     "Texts": [
       {
-        "Text": "This will be educational!"
+        "Text": "I'll go easy on you!"
       }
     ]
   },
@@ -83,7 +83,7 @@
     "Name": "battle_start_trainer",
     "Texts": [
       {
-        "Text": "The data shows I'll win!"
+        "Text": "This will be a real match!"
       }
     ]
   },
@@ -101,7 +101,7 @@
     "Name": "battle_start_ace",
     "Texts": [
       {
-        "Text": "Precision victory!"
+        "Text": "Prepare yourself!"
       }
     ]
   },
@@ -119,7 +119,7 @@
     "Name": "victory",
     "Texts": [
       {
-        "Text": "Back to the lab for more research..."
+        "Text": "Impressive skills!"
       }
     ]
   },
@@ -137,7 +137,7 @@
     "Name": "defeat",
     "Texts": [
       {
-        "Text": "Science prevails!"
+        "Text": "You'll get there!"
       }
     ]
   }
@@ -227,10 +227,10 @@
       }]
     },
     OnGround:1b,
-    Owner:[I;-1710224863,1854557491,53757918,-829219249],
+    Owner:[I;-1297799540,629747201,1609282727,9580316],
     PersistenceRequired:0b,
     Pos:[597.5d,78.0d,399.5d],
-    PresetUUID:[I;1531521747,-777728168,1456677281,-1946024748],
+    PresetUUID:[I;1739220742,-435369380,-1296613614,-155213189],
     Profession:"NONE",
     Progression:{
       AttributeScalingEnabled:0b,
@@ -278,7 +278,7 @@
         Type:"NONE"
       }
     },
-    UUID:[I;-814816071,2109706926,1903262253,-1818501545],
+    UUID:[I;1356387411,-304937908,2117498217,1784632999],
     VariantType:"STEVE",
     attributes:[{
       base:0.0d,id:"minecraft:generic.attack_knockback"

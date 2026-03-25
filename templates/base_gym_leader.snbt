@@ -46,7 +46,7 @@
                 },
                 {
                   Cmd:"tp @p ${player_x} ${player_y} ${player_z}",
-                  ExecAsUser:1b,
+                  ExecAsUser:1,
                   Type:"COMMAND"
                 },
                 {
@@ -78,7 +78,7 @@
                 },
                 {
                   Cmd:"tp @p ${player_x} ${player_y} ${player_z}",
-                  ExecAsUser:1b,
+                  ExecAsUser:1,
                   Type:"COMMAND"
                 },
                 {
@@ -99,26 +99,285 @@
             {
               Actions:[
                 {
-                  Cmd:"give @p cobblemon:tm_fire_spin",
-                  ExecAsUser:1b,
+                  Cmd:"give @p simpletms:tm_firespin",
+                  ExecAsUser:1,
                   Type:"COMMAND"
                 },
                 {
-                  Cmd:"kubejs check_first_badge @p",
-                  ExecAsUser:1b,
-                  Type:"COMMAND"
-                },
-                {
-                  Cmd:"easy_npc dialog open @s @p victory_first_2",
+                  Cmd:"easy_npc dialog open @s @p victory_first_novice_2",
                   Type:"COMMAND"
                 }
               ],
               Name:"Continue"
             }
           ],
-          Name:"victory_first_1",
+          Name:"victory_first_novice_1",
           Texts:[{
-            Text:"${victory_first_dialog_1}"
+            Text:"${victory_first_novice_1}"
+          }]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Cmd:"give @p simpletms:case_tm",
+                  ExecAsUser:1,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"easy_npc dialog open @s @p victory_first_end",
+                  Type:"COMMAND"
+                }
+              ],
+              Name:"Continue"
+            }
+          ],
+          Name:"victory_first_novice_2",
+          Texts:[{
+            Text:"${victory_first_novice_2}"
+          }]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Cmd:"give @p simpletms:tm_firespin",
+                  ExecAsUser:1,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"easy_npc dialog open @s @p victory_first_end",
+                  Type:"COMMAND"
+                }
+              ],
+              Name:"Continue"
+            }
+          ],
+          Name:"victory_first_rookie",
+          Texts:[{
+            Text:"${victory_first_rookie}"
+          }]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Cmd:"give @p simpletms:tm_firespin",
+                  ExecAsUser:1,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"easy_npc dialog open @s @p victory_first_end",
+                  Type:"COMMAND"
+                }
+              ],
+              Name:"Continue"
+            }
+          ],
+          Name:"victory_first_apprentice",
+          Texts:[{
+            Text:"${victory_first_apprentice}"
+          }]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Cmd:"give @p simpletms:tm_firespin",
+                  ExecAsUser:1,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"easy_npc dialog open @s @p victory_first_end",
+                  Type:"COMMAND"
+                }
+              ],
+              Name:"Continue"
+            }
+          ],
+          Name:"victory_first_trainer",
+          Texts:[{
+            Text:"${victory_first_trainer}"
+          }]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Cmd:"give @p simpletms:tm_firespin",
+                  ExecAsUser:1,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"easy_npc dialog open @s @p victory_first_end",
+                  Type:"COMMAND"
+                }
+              ],
+              Name:"Continue"
+            }
+          ],
+          Name:"victory_first_challenger",
+          Texts:[{
+            Text:"${victory_first_challenger}"
+          }]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Cmd:"give @p simpletms:tm_firespin",
+                  ExecAsUser:1,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"easy_npc dialog open @s @p victory_first_end",
+                  Type:"COMMAND"
+                }
+              ],
+              Name:"Continue"
+            }
+          ],
+          Name:"victory_first_pro",
+          Texts:[{
+            Text:"${victory_first_pro}"
+          }]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Cmd:"give @p simpletms:tm_firespin",
+                  ExecAsUser:1,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"easy_npc dialog open @s @p victory_first_end",
+                  Type:"COMMAND"
+                }
+              ],
+              Name:"Continue"
+            }
+          ],
+          Name:"victory_first_ace",
+          Texts:[{
+            Text:"${victory_first_ace}"
+          }]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Cmd:"give @p simpletms:tm_firespin",
+                  ExecAsUser:1,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"easy_npc dialog open @s @p victory_first_end",
+                  Type:"COMMAND"
+                }
+              ],
+              Name:"Continue"
+            }
+          ],
+          Name:"victory_first_elite",
+          Texts:[{
+            Text:"${victory_first_elite}"
+          }]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Cmd:"give @p simpletms:tm_firespin",
+                  ExecAsUser:1,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"easy_npc dialog open @s @p victory_first_end",
+                  Type:"COMMAND"
+                }
+              ],
+              Name:"Continue"
+            }
+          ],
+          Name:"victory_first_master",
+          Texts:[{
+            Text:"${victory_first_master}"
+          }]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Cmd:"give @p simpletms:tm_firespin",
+                  ExecAsUser:1,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"easy_npc dialog open @s @p victory_first_end",
+                  Type:"COMMAND"
+                }
+              ],
+              Name:"Continue"
+            }
+          ],
+          Name:"victory_first_masterstar1",
+          Texts:[{
+            Text:"${victory_first_masterstar1}"
+          }]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Cmd:"give @p simpletms:tm_firespin",
+                  ExecAsUser:1,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"easy_npc dialog open @s @p victory_first_end",
+                  Type:"COMMAND"
+                }
+              ],
+              Name:"Continue"
+            }
+          ],
+          Name:"victory_first_masterstar2",
+          Texts:[{
+            Text:"${victory_first_masterstar2}"
+          }]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Cmd:"give @p simpletms:tm_firespin",
+                  ExecAsUser:1,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"easy_npc dialog open @s @p victory_first_end",
+                  Type:"COMMAND"
+                }
+              ],
+              Name:"Continue"
+            }
+          ],
+          Name:"victory_first_masterstar3",
+          Texts:[{
+            Text:"${victory_first_masterstar3}"
           }]
         },
         {
@@ -127,17 +386,17 @@
               Actions:[
                 {
                   Cmd:"badge award ${badge_id}",
-                  ExecAsUser:1b,
+                  ExecAsUser:1,
                   Type:"COMMAND"
                 },
                 {
                   Cmd:"advancement grant @p only league:badges/${badge_id}_badge",
-                  ExecAsUser:1b,
+                  ExecAsUser:1,
                   Type:"COMMAND"
                 },
                 {
                   Cmd:"trainer_record ${leader_id} win @p @s",
-                  ExecAsUser:1b,
+                  ExecAsUser:1,
                   Type:"COMMAND"
                 },
                 {
@@ -147,9 +406,9 @@
               Name:"Thank you!"
             }
           ],
-          Name:"victory_first_2",
+          Name:"victory_first_end",
           Texts:[{
-            Text:"${victory_first_dialog_2}"
+            Text:"${victory_first_end}"
           }]
         },
         {

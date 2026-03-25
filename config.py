@@ -227,13 +227,10 @@ NAMES = {
     ],
     
     # Ace Trainers
-    "acetrainer_m": [
+    "acetrainer": [
         "Marcus", "Spencer", "Damian", "Tyson", "Caleb", "Victor", "Xander", "Zane",
         "Elite", "Apex", "Zenith", "Peak", "Summit", "Maximus", "Valor", "Blaze",
-        "Leon", "Rafael", "Gabriel", "Miguel", "Alejandro", "Santiago", "Mateo", "Diego"
-    ],
-    "aceTraine_f": [
-        "Valerie", "Celeste", "Serena", "Dawn", "Lyra", "Aurora", "Stella", "Nova",
+        "Leon", "Rafael", "Gabriel", "Miguel", "Alejandro", "Santiago", "Mateo", "Diego", "Valerie", "Celeste", "Serena", "Dawn", "Lyra", "Aurora", "Stella", "Nova",
         "Elite", "Apex", "Zenith", "Peak", "Summit", "Maxima", "Valor", "Blaze",
         "Sofia", "Valentina", "Camila", "Isabella", "Luciana", "Martina", "Renata", "Julieta"
     ],
@@ -244,17 +241,17 @@ NAMES = {
     ],
     
     # Specialists
-    "hex_maniac": [
+    "hexmaniac": [
         "Morticia", "Lilith", "Raven", "Salem", "Willow", "Hazel", "Rowan", "Ivy",
         "Thorn", "Nightshade", "Belladonna", "Hemlock", "Wisteria", "Amethyst", "Onyx",
         "Morgana", "Circe", "Hecate", "Nyx", "Selene", "Luna", "Stella", "Astra"
     ],
-    "fairy_tale_girl": [
+    "fairytalegirl": [
         "Elara", "Lyra", "Aurora", "Briar", "Rose", "Lily", "Fiona", "Gwendolyn",
         "Morgan", "Vivian", "Nimue", "Titania", "Oberon", "Puck", "Merida", "Rapunzel",
         "Cinderella", "Belle", "Ariel", "Jasmine", "Pocahontas", "Mulan", "Tiana", "Moana"
     ],
-    "dragon_tamer": [
+    "dragontamer": [
         "Drake", "Dragon", "Wyvern", "Serpent", "Hydra", "Smaug", "Fafnir", "Bahamut",
         "Tiamat", "Ryujin", "Quetzal", "Kukulkan", "Draco", "Drakon", "Lindworm",
         "Clayton", "Iris", "Drayden", "Lance", "Clair", "Raihan", "Hassel", "Ryuki"
@@ -264,7 +261,7 @@ NAMES = {
         "Spark", "Ash", "Coal", "Soot", "Flame", "Heat", "Burn", "Scorch",
         "Blaine", "Flannery", "Chili", "Cilan", "Cress", "Malva", "Kabu", "Raihan"
     ],
-    "bird_keeper": [
+    "birdkeeper": [
         "Skye", "Wing", "Feather", "Aero", "Zephyr", "Plume", "Swift", "Talon",
         "Hawk", "Eagle", "Raven", "Robin", "Sparrow", "Crow", "Dove", "Jay",
         "Paloma", "Aguila", "Gaviota", "Condor", "Falcon", "Albatross", "Kestrel"
@@ -541,7 +538,7 @@ BAG_ITEMS = {
     3: [{"item": "cobblemon:super_potion", "quantity": 2}, {"item": "cobblemon:antidote", "quantity": 1}],
     4: [{"item": "cobblemon:super_potion", "quantity": 3}, {"item": "cobblemon:full_heal", "quantity": 1}],
     5: [{"item": "cobblemon:hyper_potion", "quantity": 2}, {"item": "cobblemon:full_heal", "quantity": 1}],
-    6: [{"item": "cobblemon:hyper_potion", "quantity": 3}, {"item": "cobblemon:revive", "quantity": 1}],
+    6: [{"item": "cobblemon:hyper_potion", "quantity": 3}],
     7: [{"item": "cobblemon:max_potion", "quantity": 2}],
     8: [{"item": "cobblemon:max_potion", "quantity": 3}]
 }
@@ -1432,7 +1429,7 @@ POKEMON_POOLS = {
 
 
 
-  "hex_maniac": {
+  "hexmaniac": {
     "common": [
       "cacnea",
       "carvanha",
@@ -1587,7 +1584,7 @@ POKEMON_POOLS = {
     ]
   },
 
-  "fairy_tale_girl": {
+  "fairytalegirl": {
     "common": [
       "azurill",
       "comfey",
@@ -1659,7 +1656,7 @@ POKEMON_POOLS = {
     ]
   },
 
-  "dragon_tamer": {
+  "dragontamer": {
     "common": [
       "applin",
       "axew",
@@ -1812,7 +1809,7 @@ POKEMON_POOLS = {
     ]
   },
 
-  "bird_keeper": {
+  "birdkeeper": {
     "common": [
       "archen",
       "caterpie",

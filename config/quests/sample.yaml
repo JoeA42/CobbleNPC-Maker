@@ -1,0 +1,9 @@
+id: sample_quest
+name: "Sample Quest"
+description: "A sample quest for testing"
+
+stages:
+  1:
+    name: "Test Stage"
+    description: "This is a test"
+    final: true

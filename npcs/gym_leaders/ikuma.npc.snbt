@@ -46,7 +46,7 @@
                 },
                 {
                   Cmd:"tp @p 610 78 402",
-                  ExecAsUser:1b,
+                  ExecAsUser:1,
                   Type:"COMMAND"
                 },
                 {
@@ -59,7 +59,7 @@
           ],
           Name:"challenge",
           Texts:[{
-            Text:"You want the Ember Badge? Show me your fire!"
+            Text:"You want the Ember Badge? Show me your fire! The tribe always says fire warms more than just the body!"
           }]
         },
         {
@@ -78,7 +78,7 @@
                 },
                 {
                   Cmd:"tp @p 610 78 402",
-                  ExecAsUser:1b,
+                  ExecAsUser:1,
                   Type:"COMMAND"
                 },
                 {
@@ -91,7 +91,7 @@
           ],
           Name:"rematch_challenge",
           Texts:[{
-            Text:"Back for another challenge? Let's see if you've improved!"
+            Text:"Back for another challenge? The elders said I should test your growth! Let's see how much warmer your fire has become!"
           }]
         },
         {
@@ -99,26 +99,285 @@
             {
               Actions:[
                 {
-                  Cmd:"give @p cobblemon:tm_fire_spin",
-                  ExecAsUser:1b,
+                  Cmd:"give @p simpletms:tm_firespin",
+                  ExecAsUser:1,
                   Type:"COMMAND"
                 },
                 {
-                  Cmd:"kubejs check_first_badge @p",
-                  ExecAsUser:1b,
-                  Type:"COMMAND"
-                },
-                {
-                  Cmd:"easy_npc dialog open @s @p victory_first_2",
+                  Cmd:"easy_npc dialog open @s @p victory_first_novice_2",
                   Type:"COMMAND"
                 }
               ],
               Name:"Continue"
             }
           ],
-          Name:"victory_first_1",
+          Name:"victory_first_novice_1",
           Texts:[{
-            Text:"Congratulations! You've beaten the Ember Gym! For your efforts, I will award you the TM Fire Spin!"
+            Text:"Wow! You really know how to battle! The tribe will love hearing about this! Here, take TM Fire Spin!"
+          }]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Cmd:"give @p simpletms:case_tm",
+                  ExecAsUser:1,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"easy_npc dialog open @s @p victory_first_end",
+                  Type:"COMMAND"
+                }
+              ],
+              Name:"Continue"
+            }
+          ],
+          Name:"victory_first_novice_2",
+          Texts:[{
+            Text:"Since this is your first badge, you'll need somewhere to keep all your TMs! The traders who buy our ice gave me this!"
+          }]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Cmd:"give @p simpletms:tm_firespin",
+                  ExecAsUser:1,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"easy_npc dialog open @s @p victory_first_end",
+                  Type:"COMMAND"
+                }
+              ],
+              Name:"Continue"
+            }
+          ],
+          Name:"victory_first_rookie",
+          Texts:[{
+            Text:"A Rookie badge winner! The tribe will be so excited! We'll share this story around the campfire tonight! Here's TM Fire Spin!"
+          }]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Cmd:"give @p simpletms:tm_firespin",
+                  ExecAsUser:1,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"easy_npc dialog open @s @p victory_first_end",
+                  Type:"COMMAND"
+                }
+              ],
+              Name:"Continue"
+            }
+          ],
+          Name:"victory_first_apprentice",
+          Texts:[{
+            Text:"An Apprentice already! You're learning fast! This reminds me of when I first started training with Grandpa's Arcanine! Here's TM Fire Spin!"
+          }]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Cmd:"give @p simpletms:tm_firespin",
+                  ExecAsUser:1,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"easy_npc dialog open @s @p victory_first_end",
+                  Type:"COMMAND"
+                }
+              ],
+              Name:"Continue"
+            }
+          ],
+          Name:"victory_first_trainer",
+          Texts:[{
+            Text:"A Trainer now! That's what the League calls me too! We have something in common! Here, take TM Fire Spin!"
+          }]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Cmd:"give @p simpletms:tm_firespin",
+                  ExecAsUser:1,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"easy_npc dialog open @s @p victory_first_end",
+                  Type:"COMMAND"
+                }
+              ],
+              Name:"Continue"
+            }
+          ],
+          Name:"victory_first_challenger",
+          Texts:[{
+            Text:"A Challenger! The elders always say challengers have the warmest fires! They were right about you! Here's TM Fire Spin!"
+          }]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Cmd:"give @p simpletms:tm_firespin",
+                  ExecAsUser:1,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"easy_npc dialog open @s @p victory_first_end",
+                  Type:"COMMAND"
+                }
+              ],
+              Name:"Continue"
+            }
+          ],
+          Name:"victory_first_pro",
+          Texts:[{
+            Text:"A Pro! You must travel a lot! Like my tribe! We move with the seasons, but the fire always stays warm! TM Fire Spin for you!"
+          }]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Cmd:"give @p simpletms:tm_firespin",
+                  ExecAsUser:1,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"easy_npc dialog open @s @p victory_first_end",
+                  Type:"COMMAND"
+                }
+              ],
+              Name:"Continue"
+            }
+          ],
+          Name:"victory_first_ace",
+          Texts:[{
+            Text:"An Ace! That's what the tribe calls our best hunters! You've earned TM Fire Spin!"
+          }]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Cmd:"give @p simpletms:tm_firespin",
+                  ExecAsUser:1,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"easy_npc dialog open @s @p victory_first_end",
+                  Type:"COMMAND"
+                }
+              ],
+              Name:"Continue"
+            }
+          ],
+          Name:"victory_first_elite",
+          Texts:[{
+            Text:"Elite! Almost as high as the mountain peaks we climb! Here's TM Fire Spin, champion!"
+          }]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Cmd:"give @p simpletms:tm_firespin",
+                  ExecAsUser:1,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"easy_npc dialog open @s @p victory_first_end",
+                  Type:"COMMAND"
+                }
+              ],
+              Name:"Continue"
+            }
+          ],
+          Name:"victory_first_master",
+          Texts:[{
+            Text:"A Master! Like the eldest of the tribe! They'll want to meet you someday! TM Fire Spin is yours!"
+          }]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Cmd:"give @p simpletms:tm_firespin",
+                  ExecAsUser:1,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"easy_npc dialog open @s @p victory_first_end",
+                  Type:"COMMAND"
+                }
+              ],
+              Name:"Continue"
+            }
+          ],
+          Name:"victory_first_masterstar1",
+          Texts:[{
+            Text:"A one-star Master! The tribe will sing songs about this battle! Here's TM Fire Spin, and a special gift from our traders!"
+          }]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Cmd:"give @p simpletms:tm_firespin",
+                  ExecAsUser:1,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"easy_npc dialog open @s @p victory_first_end",
+                  Type:"COMMAND"
+                }
+              ],
+              Name:"Continue"
+            }
+          ],
+          Name:"victory_first_masterstar2",
+          Texts:[{
+            Text:"Two stars! That's two times the fire! The tribe would throw a feast for you! Here's TM Fire Spin!"
+          }]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Cmd:"give @p simpletms:tm_firespin",
+                  ExecAsUser:1,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"easy_npc dialog open @s @p victory_first_end",
+                  Type:"COMMAND"
+                }
+              ],
+              Name:"Continue"
+            }
+          ],
+          Name:"victory_first_masterstar3",
+          Texts:[{
+            Text:"Three stars! The brightest in the sky! You burn brighter than our campfires! TM Fire Spin is yours!"
           }]
         },
         {
@@ -127,17 +386,17 @@
               Actions:[
                 {
                   Cmd:"badge award ember",
-                  ExecAsUser:1b,
+                  ExecAsUser:1,
                   Type:"COMMAND"
                 },
                 {
                   Cmd:"advancement grant @p only league:badges/ember_badge",
-                  ExecAsUser:1b,
+                  ExecAsUser:1,
                   Type:"COMMAND"
                 },
                 {
                   Cmd:"trainer_record ikuma win @p @s",
-                  ExecAsUser:1b,
+                  ExecAsUser:1,
                   Type:"COMMAND"
                 },
                 {
@@ -147,9 +406,9 @@
               Name:"Thank you!"
             }
           ],
-          Name:"victory_first_2",
+          Name:"victory_first_end",
           Texts:[{
-            Text:"And as champion of the Ember Gym, you have earned the Ember Medal!"
+            Text:"And as champion of the Ember Gym, you have earned the Ember Medal! Wear it proudly! The tribe honors your achievement!"
           }]
         },
         {
@@ -158,12 +417,12 @@
               Actions:[
                 {
                   Cmd:"loot give @p loot trainer_loot:ikuma",
-                  ExecAsUser:1b,
+                  ExecAsUser:1,
                   Type:"COMMAND"
                 },
                 {
                   Cmd:"gym_clear_rematch_flag ikuma @p",
-                  ExecAsUser:1b,
+                  ExecAsUser:1,
                   Type:"COMMAND"
                 },
                 {
@@ -175,7 +434,7 @@
           ],
           Name:"victory_rematch",
           Texts:[{
-            Text:"Still burning bright! Here's your rematch reward!"
+            Text:"Back again! You're like the warm sun that always returns! Here's your reward!"
           }]
         },
         {
@@ -187,7 +446,7 @@
           }],
           Name:"defeat",
           Texts:[{
-            Text:"My flames need more training... Come back stronger!"
+            Text:"My fire burned brighter today! But your flames will grow stronger! Come back when your fire is warmer!"
           }]
         },
         {
@@ -199,7 +458,7 @@
           }],
           Name:"rematch_cooldown",
           Texts:[{
-            Text:"I'm still recovering from our last battle. Come back tomorrow!"
+            Text:"The tribe says fire needs rest to burn bright again. Come back tomorrow!"
           }]
         },
         {
@@ -211,7 +470,7 @@
           }],
           Name:"default",
           Texts:[{
-            Text:"Welcome to my gym! The heat is on!"
+            Text:"Welcome to my gym! The heat is on! My tribe keeps warm with fire Pokémon, so I'm right at home!"
           }]
         }
       ],
@@ -300,10 +559,10 @@
       }]
     },
     OnGround:1b,
-    Owner:[I;-1148693854,1672741054,-403401066,1847737055],
+    Owner:[I;399178006,1186456586,2006451648,-1551172154],
     PersistenceRequired:0b,
     Pos:[585,78,402],
-    PresetUUID:[I;1973119316,1767300698,503069377,-1954902623],
+    PresetUUID:[I;1039848301,1217046179,-827079501,1731419686],
     Profession:"NONE",
     Progression:{
       AttributeScalingEnabled:0b,
@@ -351,7 +610,7 @@
         Type:"NONE"
       }
     },
-    UUID:[I;308645886,624011604,-1732670034,809072317],
+    UUID:[I;-1251423339,602514907,-798208915,-1196819058],
     VariantType:"ALEX",
     attributes:[{
       base:0.0d,id:"minecraft:generic.attack_knockback"
