@@ -413,16 +413,37 @@ GYM_LEADERS = {
 
 # Gym Leader Dialogs
 GYM_DIALOGS = {
-    "ikuma": {
-        "flavor": "Welcome to my gym! The heat is on!",
-        "challenge": "You want the Ember Badge? Show me your fire!",
-        "rematch_challenge": "Back for another challenge? Let's see if you've improved!",
-        "victory_first_1": "Congratulations! You've beaten the Ember Gym! For your efforts, I will award you the TM Fire Spin!",
-        "victory_first_2": "And as champion of the Ember Gym, you have earned the Ember Medal!",
-        "victory_rematch": "Still burning bright! Here's your rematch reward!",
-        "defeat": "My flames need more training... Come back stronger!",
-        "rematch_cooldown": "I'm still recovering from our last battle. Come back tomorrow!"
-    },
+    
+  # Fire Gym Leader
+  "ikuma": {
+      "flavor": "Welcome to my gym! The heat is on! My tribe keeps warm with fire Pokémon, so I'm right at home!",
+      "challenge": "You want the Ember Badge? Show me your fire! The tribe always says fire warms more than just the body!",
+      "rematch_challenge": "Back for another challenge? The elders said I should test your growth! Let's see how much warmer your fire has become!",
+      
+      # First badge ever (special flow)
+      "victory_first_novice_1": "Wow! You really know how to battle! The tribe will love hearing about this! Here, take TM Fire Spin!",
+      "victory_first_novice_2": "Since this is your first badge, you'll need somewhere to keep all your TMs! The traders who buy our ice gave me this!",
+      
+      # Rank-specific victory dialogs
+      "victory_first_rookie": "A Rookie badge winner! The tribe will be so excited! We'll share this story around the campfire tonight! Here's TM Fire Spin!",
+      "victory_first_apprentice": "An Apprentice already! You're learning fast! This reminds me of when I first started training with Grandpa's Arcanine! Here's TM Fire Spin!",
+      "victory_first_trainer": "A Trainer now! That's what the League calls me too! We have something in common! Here, take TM Fire Spin!",
+      "victory_first_challenger": "A Challenger! The elders always say challengers have the warmest fires! They were right about you! Here's TM Fire Spin!",
+      "victory_first_pro": "A Pro! You must travel a lot! Like my tribe! We move with the seasons, but the fire always stays warm! TM Fire Spin for you!",
+      "victory_first_ace": "An Ace! That's what the tribe calls our best hunters! You've earned TM Fire Spin!",
+      "victory_first_elite": "Elite! Almost as high as the mountain peaks we climb! Here's TM Fire Spin, champion!",
+      "victory_first_master": "A Master! Like the eldest of the tribe! They'll want to meet you someday! TM Fire Spin is yours!",
+      "victory_first_masterstar1": "A one-star Master! The tribe will sing songs about this battle! Here's TM Fire Spin, and a special gift from our traders!",
+      "victory_first_masterstar2": "Two stars! That's two times the fire! The tribe would throw a feast for you! Here's TM Fire Spin!",
+      "victory_first_masterstar3": "Three stars! The brightest in the sky! You burn brighter than our campfires! TM Fire Spin is yours!",
+      
+      # Badge ceremony (common ending)
+      "victory_first_end": "And as champion of the Ember Gym, you have earned the Ember Medal! Wear it proudly! The tribe honors your achievement!",
+      
+      "victory_rematch": "Back again! You're like the warm sun that always returns! Here's your reward!",
+      "defeat": "My fire burned brighter today! But your flames will grow stronger! Come back when your fire is warmer!",
+      "rematch_cooldown": "The tribe says fire needs rest to burn bright again. Come back tomorrow!"
+  },
     # Other gym leaders...
 }
 
