@@ -1,0 +1,316 @@
+{
+  PresetMetadata:{
+    author:"Joe_the_magi",
+    category:"General",
+    created:1774369981377L,
+    description:"",
+    entityTypeId:"easy_npc:humanoid_slim",
+    modified:1774369981377L,
+    name:"Scientist Grace",
+    variantType:"ALEX",
+    version:"1.0.0"
+  },
+  data:{
+    ActionData:{
+      ActionEventSet:{
+        ON_DISTANCE_VERY_CLOSE:[{
+          Cmd:"battle trigger scientist_grace @s @p",
+          Type:"COMMAND"
+        }],
+        ON_INTERACTION:[{
+          Type:"OPEN_DEFAULT_DIALOG"
+        }]
+      },
+      ActionPermissionLevel:4
+    },
+    ArmorDropChances:[0.085f,0.085f,0.085f,0.085f],
+    ArmorItems:[{},{},{},{}],
+    Brain:{
+      memories:{}
+    },
+    CanPickUpLoot:0b,
+    CustomName:'{"text":"Scientist Grace","color":"#FFFFFF"}',
+    CustomNameVisible:1b,
+    DialogData:{
+      DialogDataSet:[
+  {
+    "Buttons": [
+      {
+        "Actions": [
+          {
+            "Type": "CLOSE_DIALOG"
+          }
+        ],
+        "Name": "Goodbye"
+      }
+    ],
+    "Name": "Default",
+    "Texts": [
+      {
+        "Text": "Science is fascinating!"
+      }
+    ]
+  },
+  {
+    "Buttons": [
+      {
+        "Actions": [
+          {
+            "Type": "CLOSE_DIALOG"
+          }
+        ],
+        "Name": "Close"
+      }
+    ],
+    "Name": "battle_start_novice",
+    "Texts": [
+      {
+        "Text": "Let's analyze your battle data!"
+      }
+    ]
+  },
+  {
+    "Buttons": [
+      {
+        "Actions": [
+          {
+            "Type": "CLOSE_DIALOG"
+          }
+        ],
+        "Name": "Close"
+      }
+    ],
+    "Name": "battle_start_trainer",
+    "Texts": [
+      {
+        "Text": "My research has improved my team!"
+      }
+    ]
+  },
+  {
+    "Buttons": [
+      {
+        "Actions": [
+          {
+            "Type": "CLOSE_DIALOG"
+          }
+        ],
+        "Name": "Close"
+      }
+    ],
+    "Name": "battle_start_ace",
+    "Texts": [
+      {
+        "Text": "My formula is nearly perfected!"
+      }
+    ]
+  },
+  {
+    "Buttons": [
+      {
+        "Actions": [
+          {
+            "Type": "CLOSE_DIALOG"
+          }
+        ],
+        "Name": "Close"
+      }
+    ],
+    "Name": "victory",
+    "Texts": [
+      {
+        "Text": "Back to the lab for more research..."
+      }
+    ]
+  },
+  {
+    "Buttons": [
+      {
+        "Actions": [
+          {
+            "Type": "CLOSE_DIALOG"
+          }
+        ],
+        "Name": "Close"
+      }
+    ],
+    "Name": "defeat",
+    "Texts": [
+      {
+        "Text": "Science prevails!"
+      }
+    ]
+  }
+],
+      Type:"CUSTOM"
+    },
+    DisplayAttribute:[{
+      Bool:1b,Type:"VISIBLE"
+    },{
+      Bool:1b,Type:"VISIBLE_AT_DAY"
+    },{
+      Bool:1b,Type:"VISIBLE_AT_NIGHT"
+    },{
+      Bool:1b,Type:"VISIBLE_IN_CREATIVE"
+    },{
+      Bool:1b,Type:"VISIBLE_IN_SPECTATOR"
+    },{
+      Bool:1b,Type:"VISIBLE_IN_STANDARD"
+    },{
+      Bool:1b,Type:"VISIBLE_TO_OWNER"
+    },{
+      Bool:1b,Type:"VISIBLE_TO_TEAM"
+    },{
+      Int:7,Type:"LIGHT_LEVEL"
+    },{
+      Text:"ALWAYS",Type:"NAME_VISIBILITY"
+    }],
+    EasyNPCVersion:3,
+    EntityAttribute:{
+      CanBeHitByProjectile:0b,
+      CanBeLeashed:0b,
+      CanBreatheUnderwater:0b,
+      CanCloseDoor:0b,
+      CanFloat:0b,
+      CanOpenDoor:0b,
+      CanPassDoor:0b,
+      CanUseNetherPortal:0b,
+      Freefall:0b,
+      HealthRegeneration:0.0d,
+      IsAttackableByMonsters:0b,
+      IsAttackableByPlayers:0b,
+      IsInvulnerable:1b,
+      IsPushable:0b,
+      NoGravity:0b,
+      PushEntities:0b
+    },
+    HandDropChances:[0.085f,0.085f],
+    HandItems:[{},{}],
+    Invulnerable:1b,
+    LeftHanded:0b,
+    ModelData:{
+      DefaultPose:"STANDING",
+      Pose:"VANILLA",
+      Position:{
+        Head:[0.0f,0.0f,0.0f],
+        RightArm:[0.0f,0.0f,0.0f]
+      },
+      Rotation:{
+        Head:[0.0f,0.0f,0.0f,0.0f],
+        RightArm:[0.0f,0.0f,0.0f,0.0f],
+        Root:[0.0f,-96.777275f,0.0f,1.0f]
+      },
+      Scale:{
+        Root:[1.0f,1.0f,1.0f]
+      },
+      Visible:{}
+    },
+    Navigation:{
+      Home:{
+        X:-1459,
+        Y:68,
+        Z:-1722
+      }
+    },
+    NeoForgeData:{},
+    ObjectiveData:{
+      HasObjectives:1b,
+      HasTravelTarget:1b,
+      ObjectiveDataSet:[{
+        Prio:9,Type:"LOOK_AT_PLAYER"
+      },{
+        Prio:10,Type:"LOOK_AT_MOB"
+      },{
+        Prio:3,SpeedModifier:0.6d,Type:"MOVE_BACK_TO_HOME"
+      },{
+        Prio:9,Type:"LOOK_AT_RESET"
+      }]
+    },
+    OnGround:1b,
+    Owner:[I;1290388800,367117752,1186248226,1328340653],
+    PersistenceRequired:0b,
+    Pos:[597.5d,78.0d,399.5d],
+    PresetUUID:[I;-986316675,-43888394,981663372,-481704172],
+    Profession:"NONE",
+    Progression:{
+      AttributeScalingEnabled:0b,
+      EntityExperience:1,
+      EntityExperienceLevel:1
+    },
+    RenderData:{},
+    Rotation:[-96.777275f,0.0f],
+    SkinData:{
+      Content:"",
+      DisableLayers:0b,
+      Name:"ALEX",
+      Timestamp:1774369936545L,
+      Type:"DEFAULT",
+      URL:"",
+      UUID:[I;0,0,0,0]
+    },
+    SoundData:{
+      SoundDataSet:[{
+        Name:"minecraft:entity.player.death",Type:"DEATH"
+      },{
+        Name:"minecraft:entity.generic.eat",Type:"EAT"
+      },{
+        Name:"minecraft:entity.player.hurt",Type:"HURT"
+      },{
+        Name:"minecraft:entity.villager.trade",Type:"TRADE"
+      },{
+        Name:"minecraft:entity.villager.yes",Type:"TRADE_YES"
+      },{
+        Name:"minecraft:entity.villager.no",Type:"TRADE_NO"
+      }]
+    },
+    Status:{
+      finalized:1b,
+      npc_data_last_saved:1774368259961L,
+      npc_data_last_update:1774369936545L
+    },
+    TrackedData:{},
+    TradingData:{
+      TradingDataSet:{
+        LastReset:0L,
+        MaxUses:64,
+        ResetsEveryMin:0,
+        RewardedXP:0,
+        Type:"NONE"
+      }
+    },
+    UUID:[I;1659669219,1447578768,-2015214907,2099050800],
+    VariantType:"ALEX",
+    attributes:[{
+      base:0.0d,id:"minecraft:generic.attack_knockback"
+    },{
+      base:0.6000000238418579d,id:"minecraft:generic.movement_speed"
+    },{
+      base:0.0d,id:"minecraft:zombie.spawn_reinforcements"
+    },{
+      base:0.0d,id:"minecraft:generic.knockback_resistance"
+    },{
+      base:0.0d,id:"minecraft:generic.oxygen_bonus"
+    },{
+      base:20.0d,id:"minecraft:generic.max_health"
+    },{
+      base:32.0d,id:"minecraft:generic.follow_range",modifiers:[{
+        amount:0.03614699739795507d,id:"minecraft:random_spawn_bonus",operation:"add_multiplied_base"
+      }]
+    },{
+      base:1.0d,id:"minecraft:generic.attack_damage"
+    }],
+    id:"easy_npc:humanoid_slim",
+    "neoforge:attachments":{
+      "accessories:inventory_holder":{},
+      "supplementaries:slimed_data":0
+    },
+    "neoforge:spawn_type":"SPAWN_EGG",
+    "treechop:chopSettings":{
+      chopInCreativeMode:0b,
+      choppingEnabled:1b,
+      isSynced:0b,
+      sneakBehavior:"INVERT_CHOPPING",
+      treesMustHaveLeaves:1b
+    }
+  }
+}

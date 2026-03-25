@@ -1,0 +1,69 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Generated trainer files (these are the output - keep the structure but ignore the files)
+trainers/regular/*/
+trainers/leaders/*/
+npcs/regular/
+npcs/gym_leaders/
+
+# But keep the folder structure
+!trainers/regular/
+!trainers/leaders/
+!npcs/
+!npcs/regular/
+!npcs/gym_leaders/
+
+# Pokemon API cache (can be regenerated)
+pokemon_cache/
+
+# KubeJS data (server files, not part of generator)
+kubejs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# OS
+Thumbs.db
+Desktop.ini
+
+# Project specific
+*.json.bak
+*.npc.snbt.bak
+*.py.bak
+
+# Testing
+test_output/
+temp/
