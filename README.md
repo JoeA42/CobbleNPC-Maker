@@ -1,9 +1,5 @@
 # CobbleNPC Maker
 
-```bash
-cat > README.md << 'EOF'
-# CobbleNPC Maker
-
 A comprehensive tool for generating Pokémon trainer NPCs for Minecraft Cobblemon modpacks. Creates fully functional NPCs compatible with Easy NPCs mod, with progressive difficulty based on player badge count.
 
 ## What It Does
