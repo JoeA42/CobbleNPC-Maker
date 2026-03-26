@@ -26,6 +26,8 @@ A comprehensive tool for generating Pokémon trainer NPCs for Minecraft Cobblemo
 ## Requirements
 
 ### Minecraft Server (to use the NPCs)
+- **Minecraft** 1.21.1
+- ***NeoForge** 21.1.219
 - **Easy NPCs** (6.11.0+) - For NPC entities
 - **TBCS (Trainer Battle Commands System)** - For Pokémon battles
 - **RCT API** - For trainer AI
