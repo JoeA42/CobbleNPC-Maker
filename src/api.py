@@ -295,7 +295,7 @@ def get_evolution_method(species):
 
 def get_best_held_item(species, rank_idx):
     """Choose a held item based on Pokémon type and rank"""
-    from config import TYPE_ITEMS, UTILITY_ITEMS
+    from source.game_data import TYPE_ITEMS, UTILITY_ITEMS
     
     types = get_pokemon_types(species)
     primary_type = types[0] if types else "normal"

@@ -1,6 +1,6 @@
 # src/generator/core.py
 import random
-from config import RANKS, BAG_ITEMS
+from source.game_data import RANKS, BAG_ITEMS
 from src.api import get_evolved_form, get_moves, get_ability
 from src.generator.evolution import get_min_evolution_level
 from src.api import get_best_held_item

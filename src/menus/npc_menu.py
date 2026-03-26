@@ -2,7 +2,7 @@ from src.npc.trainer_npc import generate_all_npcs, generate_for_trainer
 from src.npc.gym_leader_npc import generate_all_gym_leaders
 from src.utils.config_generator import generate_trainer_config
 from src.utils.debug import clear_screen
-from config import FOLDERS
+from source.game_data import FOLDERS
 
 def npc_menu():
     while True:

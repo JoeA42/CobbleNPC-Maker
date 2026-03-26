@@ -1,7 +1,7 @@
 # src/trainers/leader_generator.py
 import json
 from pathlib import Path
-from config import RANKS, BAG_ITEMS
+from source.game_data import RANKS, BAG_ITEMS
 from src.trainers.promoter import scale_leader_team
 from src.utils.file_utils import fix_held_items_in_files
 from src.utils.debug import clear_screen

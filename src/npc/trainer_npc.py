@@ -3,7 +3,7 @@ import json
 import random
 import re
 from pathlib import Path
-from config import RANKS, DIALOGS, get_dialog
+from source.game_data import RANKS, DIALOGS, get_dialog
 from src.npc.template import load_template, generate_uuids
 from src.utils.debug import debug_print
 

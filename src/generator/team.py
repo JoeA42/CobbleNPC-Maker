@@ -1,6 +1,6 @@
 # team.py
 import random
-from config import RANKS, RARITY_WEIGHTS, BAG_ITEMS
+from source.game_data import RANKS, RARITY_WEIGHTS, BAG_ITEMS
 from src.api import get_evolved_form, get_moves, get_ability
 from src.generator.evolution import get_min_evolution_level, is_valid_for_level
 from src.api import get_best_held_item

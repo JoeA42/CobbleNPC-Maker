@@ -2,7 +2,7 @@
 import json
 import random
 from pathlib import Path
-from config import RANKS, FOLDERS, NAMES, POKEMON_POOLS, BAG_ITEMS
+from source.game_data import RANKS, FOLDERS, NAMES, POKEMON_POOLS, BAG_ITEMS
 from src.generator.core import generate_team, generate_progression, scale_trainer_to_rank
 from src.utils.file_utils import fix_held_items_in_files
 from src.utils.debug import debug_print, clear_screen

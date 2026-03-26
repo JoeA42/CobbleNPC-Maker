@@ -2,6 +2,7 @@ from src.menus.trainer_menu import trainer_menu
 from src.menus.leader_menu import leader_menu
 from src.menus.npc_menu import npc_menu
 from src.menus.quest_menu import quest_menu
+from src.menus.pool_menu import pool_menu
 from src.utils.debug import clear_screen
 
 def main_menu():
@@ -15,10 +16,11 @@ def main_menu():
         print("  2. Gym Leader Operations")
         print("  3. NPC Operations")
         print("  4. Quest Operations")
-        print("  5. Exit")
+        print("  5. Pool Generation Operations")
+        print("  6. Exit")
         print("-" * 60)
         
-        choice = input("\nEnter choice (1-5): ").strip()
+        choice = input("\nEnter choice (1-6): ").strip()
         
         if choice == "1":
             trainer_menu()
@@ -29,6 +31,8 @@ def main_menu():
         elif choice == "4":
             quest_menu()
         elif choice == "5":
+            pool_menu()
+        elif choice == "6":
             print("\nGoodbye!")
             break
         else:

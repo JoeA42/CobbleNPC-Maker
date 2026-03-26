@@ -1,7 +1,7 @@
 # src/npc/gym_leader_npc.py
 import random
 from pathlib import Path
-from config import GYM_LEADERS, get_gym_dialog
+from source.game_data import GYM_LEADERS, get_gym_dialog
 from src.npc.trainer_npc import generate_uuids
 from src.npc.template import load_template
 
@@ -127,7 +127,7 @@ def generate_gym_leader_snbt(leader_id, leader_info, template_dir="source/templa
 
 def generate_all_gym_leaders(template_dir="source/templates", output_dir="outputs/npcs/gym_leaders"):
     """Generate NPC files for all gym leaders"""
-    from config import GYM_LEADERS
+    from source.game_data import GYM_LEADERS
     
     print(f"\n📝 Found {len(GYM_LEADERS)} gym leaders:")
     for leader_id, info in GYM_LEADERS.items():

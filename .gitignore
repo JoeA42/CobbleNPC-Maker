@@ -75,3 +75,7 @@ outputs/
 
 # Generated outputs (ignore these)
 outputs/
+
+# Generated pool files (can be regenerated)
+config/pokemon_pools.json
+config/evolution_items.json

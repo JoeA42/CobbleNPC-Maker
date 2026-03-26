@@ -212,7 +212,7 @@ def main():
         print(f"  💾 Saved progress to expanded_pools_progress.json")
     
     # Final save
-    output_file = "expanded_pools.json"
+    output_file = "config/pokemon_pools.json"
     with open(output_file, "w") as f:
         json.dump(expanded_pools, f, indent=2)
     

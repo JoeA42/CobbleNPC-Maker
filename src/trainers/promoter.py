@@ -2,7 +2,7 @@
 import json
 import random
 from pathlib import Path
-from config import RANKS, POKEMON_POOLS, BAG_ITEMS
+from source.game_data import RANKS, POKEMON_POOLS, BAG_ITEMS
 from src.api import get_evolved_form, get_moves, get_ability, get_min_evolution_level, get_best_held_item
 from src.generator.core import scale_trainer_to_rank
 from src.generator.evs import train_evs
