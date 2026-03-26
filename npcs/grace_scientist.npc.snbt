@@ -4,10 +4,10 @@
     category:"General",
     created:1774369981377L,
     description:"",
-    entityTypeId:"easy_npc:humanoid",
+    entityTypeId:"easy_npc:humanoid_slim",
     modified:1774369981377L,
     name:"Scientist Grace",
-    variantType:"STEVE",
+    variantType:"ALEX",
     version:"1.0.0"
   },
   data:{
@@ -83,7 +83,7 @@
     "Name": "battle_start_trainer",
     "Texts": [
       {
-        "Text": "The data shows I'll win!"
+        "Text": "My research has improved my team!"
       }
     ]
   },
@@ -101,7 +101,7 @@
     "Name": "battle_start_ace",
     "Texts": [
       {
-        "Text": "Precision victory!"
+        "Text": "My formula is nearly perfected!"
       }
     ]
   },
@@ -119,7 +119,7 @@
     "Name": "victory",
     "Texts": [
       {
-        "Text": "Back to the lab for more research..."
+        "Text": "My formula needs work..."
       }
     ]
   },
@@ -137,7 +137,7 @@
     "Name": "defeat",
     "Texts": [
       {
-        "Text": "Science prevails!"
+        "Text": "Another successful experiment!"
       }
     ]
   }
@@ -227,10 +227,10 @@
       }]
     },
     OnGround:1b,
-    Owner:[I;-1710224863,1854557491,53757918,-829219249],
+    Owner:[I;-2095686263,872985736,-332932566,678198482],
     PersistenceRequired:0b,
     Pos:[597.5d,78.0d,399.5d],
-    PresetUUID:[I;1531521747,-777728168,1456677281,-1946024748],
+    PresetUUID:[I;-906890895,1666461520,-125989223,2091688715],
     Profession:"NONE",
     Progression:{
       AttributeScalingEnabled:0b,
@@ -278,8 +278,8 @@
         Type:"NONE"
       }
     },
-    UUID:[I;-814816071,2109706926,1903262253,-1818501545],
-    VariantType:"STEVE",
+    UUID:[I;-1798603137,1678620168,-146812311,1781026537],
+    VariantType:"ALEX",
     attributes:[{
       base:0.0d,id:"minecraft:generic.attack_knockback"
     },{
@@ -299,7 +299,7 @@
     },{
       base:1.0d,id:"minecraft:generic.attack_damage"
     }],
-    id:"easy_npc:humanoid",
+    id:"easy_npc:humanoid_slim",
     "neoforge:attachments":{
       "accessories:inventory_holder":{},
       "supplementaries:slimed_data":0

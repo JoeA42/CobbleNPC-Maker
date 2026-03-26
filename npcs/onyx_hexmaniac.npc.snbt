@@ -4,10 +4,10 @@
     category:"General",
     created:1774369981377L,
     description:"",
-    entityTypeId:"easy_npc:humanoid",
+    entityTypeId:"easy_npc:humanoid_slim",
     modified:1774369981377L,
     name:"Hexmaniac Onyx",
-    variantType:"STEVE",
+    variantType:"ALEX",
     version:"1.0.0"
   },
   data:{
@@ -83,7 +83,7 @@
     "Name": "battle_start_trainer",
     "Texts": [
       {
-        "Text": "I won't go easy on you!"
+        "Text": "This will be a real match!"
       }
     ]
   },
@@ -101,7 +101,7 @@
     "Name": "battle_start_ace",
     "Texts": [
       {
-        "Text": "Prepare yourself!"
+        "Text": "I won't lose!"
       }
     ]
   },
@@ -137,7 +137,7 @@
     "Name": "defeat",
     "Texts": [
       {
-        "Text": "Better luck next time."
+        "Text": "You'll get there!"
       }
     ]
   }
@@ -227,10 +227,10 @@
       }]
     },
     OnGround:1b,
-    Owner:[I;-546046944,-429646802,336158786,1520622664],
+    Owner:[I;242654002,900727627,694943953,-82273032],
     PersistenceRequired:0b,
     Pos:[597.5d,78.0d,399.5d],
-    PresetUUID:[I;-774026783,305852241,-446883117,-139114688],
+    PresetUUID:[I;1045692840,-1339494745,-946786657,-35840323],
     Profession:"NONE",
     Progression:{
       AttributeScalingEnabled:0b,
@@ -278,8 +278,8 @@
         Type:"NONE"
       }
     },
-    UUID:[I;-218232610,1603800195,373309514,1070295872],
-    VariantType:"STEVE",
+    UUID:[I;-566652867,-1339307533,-1152711952,-1082968303],
+    VariantType:"ALEX",
     attributes:[{
       base:0.0d,id:"minecraft:generic.attack_knockback"
     },{
@@ -299,7 +299,7 @@
     },{
       base:1.0d,id:"minecraft:generic.attack_damage"
     }],
-    id:"easy_npc:humanoid",
+    id:"easy_npc:humanoid_slim",
     "neoforge:attachments":{
       "accessories:inventory_holder":{},
       "supplementaries:slimed_data":0

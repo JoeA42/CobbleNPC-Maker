@@ -1,4 +1,3 @@
-# src/utils/config_generator.py
 #!/usr/bin/env python3
 """
 generate_trainer_config.py - Generate/Update trainer_config.json from existing trainer profiles
@@ -34,7 +33,7 @@ def load_existing_config(config_path):
             print(f"⚠️ Could not load existing config, creating new one")
     return {}
 
-def scan_trainer_profiles(base_dir="trainers/regular"):
+def scan_trainer_profiles(base_dir="outputs/trainers/regular"):
     """Scan the trainers/regular folder and return all trainers found"""
     base_path = Path(base_dir)
     if not base_path.exists():
@@ -74,7 +73,7 @@ def scan_trainer_profiles(base_dir="trainers/regular"):
     
     return trainers
 
-def scan_gym_leader_profiles(base_dir="trainers/leaders"):
+def scan_gym_leader_profiles(base_dir="outputs/trainers/leaders"):
     """Scan the trainers/leaders folder and return all gym leaders found"""
     base_path = Path(base_dir)
     if not base_path.exists():
@@ -164,7 +163,7 @@ def save_config(config, output_path):
     
     print(f"\n💾 Saved to: {output_file}")
 
-def generate_trainer_config(output_path="kubejs/data/trainer_config.json"):
+def generate_trainer_config(output_path="outputs/kubejs/data/trainer_config.json"):
     """Generate/Update the trainer_config.json file"""
     print("=" * 60)
     print("GENERATING TRAINER CONFIG")

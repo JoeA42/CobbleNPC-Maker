@@ -13,15 +13,16 @@ def generate_leader_all_ranks():
     print("    GENERATE LEADER ALL RANKS")
     print("=" * 60)
     
-    # Get leaders folder
-    leaders_dir = Path("trainers/leaders")
-    if not leaders_dir.exists():
-        print(f"Leaders folder not found: {leaders_dir}")
+    # Get leaders source folder (where seed files are stored)
+    source_dir = Path("source/leaders")
+    if not source_dir.exists():
+        print(f"Source folder not found: {source_dir}")
+        print("Create source/leaders/ and add your base leader JSON files")
         return
     
-    # List all leader files
+    # List all leader source files
     leader_files = []
-    for folder in leaders_dir.iterdir():
+    for folder in source_dir.iterdir():
         if folder.is_dir():
             for file in folder.glob("*.json"):
                 leader_files.append(file)
@@ -29,12 +30,12 @@ def generate_leader_all_ranks():
             leader_files.append(folder)
     
     if not leader_files:
-        print("No leader files found!")
+        print("No leader source files found in source/leaders/")
         return
     
-    print("\nAvailable leader files:")
+    print("\nAvailable leader source files:")
     for i, file in enumerate(leader_files):
-        rel_path = file.relative_to(leaders_dir.parent)
+        rel_path = file.relative_to(source_dir.parent)
         print(f"{i+1}. {rel_path}")
     
     choice = input("\nSelect leader file (number): ").strip()
@@ -118,6 +119,10 @@ def generate_leader_all_ranks():
         print("No ranks selected")
         return
     
+    # Create output directory
+    output_dir = Path(f"outputs/trainers/leaders/{leader_name}")
+    output_dir.mkdir(parents=True, exist_ok=True)
+    
     # Generate selected ranks
     generated = []
     current_team = trainer["team"]
@@ -133,7 +138,7 @@ def generate_leader_all_ranks():
         
         # Save the new rank
         new_filename = f"{leader_name}_{target_rank['name']}.json"
-        new_filepath = filepath.parent / new_filename
+        new_filepath = output_dir / new_filename
         
         new_trainer = {
             "name": trainer["name"],
@@ -147,7 +152,7 @@ def generate_leader_all_ranks():
         
         generated.append(new_filename)
         generated_files.append(new_filepath)
-        print(f"   ✓ Saved: {new_filename}")
+        print(f"   ✓ Saved to: {new_filepath}")
         
         # Update for next iteration (if generating sequentially)
         current_team = new_team
@@ -156,6 +161,6 @@ def generate_leader_all_ranks():
     # Clean up held items
     fix_held_items_in_files(generated_files)
     
-    print(f"\n✅ Generated {len(generated)} files in {filepath.parent}/")
+    print(f"\n✅ Generated {len(generated)} files in {output_dir}/")
     for f in generated:
         print(f"   - {f}")

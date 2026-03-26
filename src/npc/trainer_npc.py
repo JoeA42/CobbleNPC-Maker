@@ -85,7 +85,7 @@ def format_dialog_dataset(dialog_dataset):
     lines.append("]")
     return "\n".join(lines)
 
-def find_trainer_profiles(base_dir="trainers/regular"):
+def find_trainer_profiles(base_dir="outputs/trainers/regular"):
     """Find all trainer profiles and group them by trainer"""
     base_path = Path(base_dir)
     if not base_path.exists():
@@ -120,7 +120,7 @@ def find_trainer_profiles(base_dir="trainers/regular"):
     
     return trainers
 
-def generate_npc_snbt(trainer_info, template_dir="templates", output_dir="npcs"):
+def generate_npc_snbt(trainer_info, template_dir="source/templates", output_dir="outputs/npcs/regular"):
     """Generate an SNBT file for a trainer"""
     trainer_class = trainer_info["class"]
     name = trainer_info["name"]
@@ -172,7 +172,7 @@ def generate_npc_snbt(trainer_info, template_dir="templates", output_dir="npcs")
     
     return output_path
 
-def generate_all_npcs(trainers_dir="trainers/regular", template_dir="templates", output_dir="npcs"):
+def generate_all_npcs(trainers_dir="outputs/trainers/regular", template_dir="source/templates", output_dir="outputs/npcs/regular"):
     """Generate NPC files for all trainers found in the trainers directory"""
     trainers = find_trainer_profiles(trainers_dir)
     
@@ -198,7 +198,7 @@ def generate_all_npcs(trainers_dir="trainers/regular", template_dir="templates",
     print(f"\n✅ Generated {generated} NPC files in {output_dir}/")
     return generated
 
-def generate_for_trainer(trainer_class, trainer_name, trainers_dir="trainers/regular", template_dir="templates", output_dir="npcs"):
+def generate_for_trainer(trainer_class, trainer_name, trainers_dir="outputs/trainers/regular", template_dir="source/templates", output_dir="outputs/npcs/regular"):
     """Generate NPC file for a specific trainer"""
     trainers = find_trainer_profiles(trainers_dir)
     

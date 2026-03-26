@@ -1,24 +1,21 @@
 {
   PresetMetadata:{
     author:"Joe_the_magi",
-    category:"General",
-    created:1774369981377L,
-    description:"",
-    entityTypeId:"easy_npc:humanoid",
-    modified:1774369981377L,
-    name:"Dragontamer Smaug",
-    variantType:"STEVE",
+    category:"Quests",
+    created:1774453423610L,
+    description:"Quest NPC",
+    entityTypeId:"${entity_type}",
+    modified:1774453423610L,
+    name:"${name}",
+    variantType:"${variant_type}",
     version:"1.0.0"
   },
   data:{
     ActionData:{
       ActionEventSet:{
-        ON_DISTANCE_VERY_CLOSE:[{
-          Cmd:"battle trigger dragontamer_smaug @s @p",
-          Type:"COMMAND"
-        }],
         ON_INTERACTION:[{
-          Type:"OPEN_DEFAULT_DIALOG"
+          Cmd:"quest_dialog ${quest_id} ${npc_id} @s @p",
+          Type:"COMMAND"
         }]
       },
       ActionPermissionLevel:4
@@ -29,119 +26,10 @@
       memories:{}
     },
     CanPickUpLoot:0b,
-    CustomName:'{"text":"Dragontamer Smaug","color":"#FFFFFF"}',
+    CustomName:'{"text":"${name}","color":"#FFFFFF"}',
     CustomNameVisible:1b,
     DialogData:{
-      DialogDataSet:[
-  {
-    "Buttons": [
-      {
-        "Actions": [
-          {
-            "Type": "CLOSE_DIALOG"
-          }
-        ],
-        "Name": "Goodbye"
-      }
-    ],
-    "Name": "Default",
-    "Texts": [
-      {
-        "Text": "Hello! I'm a trainer."
-      }
-    ]
-  },
-  {
-    "Buttons": [
-      {
-        "Actions": [
-          {
-            "Type": "CLOSE_DIALOG"
-          }
-        ],
-        "Name": "Close"
-      }
-    ],
-    "Name": "battle_start_novice",
-    "Texts": [
-      {
-        "Text": "Ready for a battle?"
-      }
-    ]
-  },
-  {
-    "Buttons": [
-      {
-        "Actions": [
-          {
-            "Type": "CLOSE_DIALOG"
-          }
-        ],
-        "Name": "Close"
-      }
-    ],
-    "Name": "battle_start_trainer",
-    "Texts": [
-      {
-        "Text": "Show me your strength!"
-      }
-    ]
-  },
-  {
-    "Buttons": [
-      {
-        "Actions": [
-          {
-            "Type": "CLOSE_DIALOG"
-          }
-        ],
-        "Name": "Close"
-      }
-    ],
-    "Name": "battle_start_ace",
-    "Texts": [
-      {
-        "Text": "I won't lose!"
-      }
-    ]
-  },
-  {
-    "Buttons": [
-      {
-        "Actions": [
-          {
-            "Type": "CLOSE_DIALOG"
-          }
-        ],
-        "Name": "Close"
-      }
-    ],
-    "Name": "victory",
-    "Texts": [
-      {
-        "Text": "Impressive skills!"
-      }
-    ]
-  },
-  {
-    "Buttons": [
-      {
-        "Actions": [
-          {
-            "Type": "CLOSE_DIALOG"
-          }
-        ],
-        "Name": "Close"
-      }
-    ],
-    "Name": "defeat",
-    "Texts": [
-      {
-        "Text": "You'll get there!"
-      }
-    ]
-  }
-],
+      DialogDataSet:${dialogs},
       Type:"CUSTOM"
     },
     DisplayAttribute:[{
@@ -201,15 +89,15 @@
         Root:[0.0f,-96.777275f,0.0f,1.0f]
       },
       Scale:{
-        Root:[1.0f,1.0f,1.0f]
+        Root:[0.65f,0.65f,0.65f]
       },
       Visible:{}
     },
     Navigation:{
       Home:{
-        X:-1459,
-        Y:68,
-        Z:-1722
+        X:0,
+        Y:64,
+        Z:0
       }
     },
     NeoForgeData:{},
@@ -227,10 +115,10 @@
       }]
     },
     OnGround:1b,
-    Owner:[I;968038322,-144178268,-2001083605,573547617],
+    Owner:[I;${owner_uuid}],
     PersistenceRequired:0b,
-    Pos:[597.5d,78.0d,399.5d],
-    PresetUUID:[I;1983389631,1369010879,-322568878,367789022],
+    Pos:[0,64,0],
+    PresetUUID:[I;${preset_uuid}],
     Profession:"NONE",
     Progression:{
       AttributeScalingEnabled:0b,
@@ -242,8 +130,8 @@
     SkinData:{
       Content:"",
       DisableLayers:0b,
-      Name:"ALEX",
-      Timestamp:1774369936545L,
+      Name:"",
+      Timestamp:1774453423610L,
       Type:"DEFAULT",
       URL:"",
       UUID:[I;0,0,0,0]
@@ -265,8 +153,8 @@
     },
     Status:{
       finalized:1b,
-      npc_data_last_saved:1774368259961L,
-      npc_data_last_update:1774369936545L
+      npc_data_last_saved:1774453423610L,
+      npc_data_last_update:1774453423610L
     },
     TrackedData:{},
     TradingData:{
@@ -278,8 +166,8 @@
         Type:"NONE"
       }
     },
-    UUID:[I;619400358,833530294,2068859942,-1071507849],
-    VariantType:"STEVE",
+    UUID:[I;${uuid}],
+    VariantType:"${variant_type}",
     attributes:[{
       base:0.0d,id:"minecraft:generic.attack_knockback"
     },{
@@ -299,7 +187,7 @@
     },{
       base:1.0d,id:"minecraft:generic.attack_damage"
     }],
-    id:"easy_npc:humanoid",
+    id:"${entity_type}",
     "neoforge:attachments":{
       "accessories:inventory_holder":{},
       "supplementaries:slimed_data":0

@@ -47,7 +47,7 @@
     "Name": "Default",
     "Texts": [
       {
-        "Text": "Hello! I'm a trainer."
+        "Text": "Nice to meet you!"
       }
     ]
   },
@@ -65,7 +65,7 @@
     "Name": "battle_start_novice",
     "Texts": [
       {
-        "Text": "I'll go easy on you!"
+        "Text": "Let's see what you've got!"
       }
     ]
   },
@@ -83,7 +83,7 @@
     "Name": "battle_start_trainer",
     "Texts": [
       {
-        "Text": "I won't go easy on you!"
+        "Text": "This will be a real match!"
       }
     ]
   },
@@ -101,7 +101,7 @@
     "Name": "battle_start_ace",
     "Texts": [
       {
-        "Text": "I won't lose!"
+        "Text": "Prepare yourself!"
       }
     ]
   },
@@ -119,7 +119,7 @@
     "Name": "victory",
     "Texts": [
       {
-        "Text": "Great battle!"
+        "Text": "Impressive skills!"
       }
     ]
   },
@@ -137,7 +137,7 @@
     "Name": "defeat",
     "Texts": [
       {
-        "Text": "Better luck next time."
+        "Text": "You'll get there!"
       }
     ]
   }
@@ -227,10 +227,10 @@
       }]
     },
     OnGround:1b,
-    Owner:[I;-556156686,1601397191,200052668,1025624862],
+    Owner:[I;1739136663,-1383820254,91392114,493480605],
     PersistenceRequired:0b,
     Pos:[597.5d,78.0d,399.5d],
-    PresetUUID:[I;-109069837,-68993572,2141312734,-767534428],
+    PresetUUID:[I;1282170907,1385622258,1691564925,1203848119],
     Profession:"NONE",
     Progression:{
       AttributeScalingEnabled:0b,
@@ -278,7 +278,7 @@
         Type:"NONE"
       }
     },
-    UUID:[I;378587222,1510189443,-2007177326,1202814662],
+    UUID:[I;-2039758334,-1172350805,1972740068,1621540891],
     VariantType:"ALEX",
     attributes:[{
       base:0.0d,id:"minecraft:generic.attack_knockback"

@@ -1,4 +1,3 @@
-# src/menus/npc_menu.py
 from src.npc.trainer_npc import generate_all_npcs, generate_for_trainer
 from src.npc.gym_leader_npc import generate_all_gym_leaders
 from src.utils.config_generator import generate_trainer_config
@@ -17,6 +16,12 @@ def npc_menu():
         print("  3. Generate Gym Leader NPCs")
         print("  4. Generate Trainer Config (for KubeJS)")
         print("  5. Back to main menu")
+        print("-" * 60)
+        print("📁 Output folders:")
+        print("   - Trainer NPCs: outputs/npcs/regular/")
+        print("   - Gym Leader NPCs: outputs/npcs/gym_leaders/")
+        print("   - Quest NPCs: outputs/npcs/quests/")
+        print("   - Trainer Config: outputs/kubejs/data/trainer_config.json")
         print("-" * 60)
         
         choice = input("\nEnter choice (1-5): ").strip()

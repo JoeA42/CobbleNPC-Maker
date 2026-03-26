@@ -1,0 +1,106 @@
+id: lost_children
+name: "Lost in the Caves"
+description: "Find the lost children in Whispering Caves"
+version: 1
+
+npcs:
+  - id: mara
+    name: "Mara"
+    role: quest_giver
+    location: village
+    skin: "villager_female"
+    dialog_on_complete: "grateful"
+  
+  - id: child_leo
+    name: "Leo"
+    role: follow_me
+    location: cave_entrance
+    skin: "child_boy_1"
+    
+  - id: child_mia
+    name: "Mia"
+    role: follow_me
+    location: cave_depth
+    skin: "child_girl_1"
+    
+  - id: child_taro
+    name: "Taro"
+    role: follow_me
+    location: cave_depth
+    skin: "child_boy_2"
+    
+  - id: child_elena
+    name: "Elena"
+    role: follow_me
+    location: cave_exit_blocked
+    skin: "child_girl_2"
+
+stages:
+  1:
+    name: "Talk to Mara"
+    description: "Speak with Mara in the village"
+    condition:
+      type: dialog
+      npc: mara
+    dialog: worried_mother
+    next: 2
+
+  2:
+    name: "Find the Children"
+    description: "Find all 4 children in Whispering Caves"
+    conditions:
+      - type: near_npc
+        npc: child_leo
+        radius: 5
+      - type: near_npc
+        npc: child_mia
+        radius: 5
+      - type: near_npc
+        npc: child_taro
+        radius: 5
+      - type: near_npc
+        npc: child_elena
+        radius: 5
+    dialog: found_children
+    next: 3
+
+  3:
+    name: "Lead Them Home"
+    description: "Guide the children back to Mara"
+    condition:
+      type: all_at_location
+      npcs: [child_leo, child_mia, child_taro, child_elena]
+      location: village
+      radius: 10
+    dialog: home_safe
+    reward:
+      - type: item
+        id: simpletms:tm_helping_hand
+        quantity: 1
+    final: true
+
+dialog:
+  worried_mother:
+    text: "Oh no! My children went into Whispering Caves hours ago and haven't come back! Please help find them!"
+    buttons:
+      - text: "I'll find them!"
+        action: accept_quest
+      - text: "Not now"
+        action: close
+  
+  found_children:
+    text: "[Leo] We got lost looking for crystals! Can you help us get home?"
+    buttons:
+      - text: "Follow me closely"
+        action: start_escort
+  
+  home_safe:
+    text: "[Mara] Thank you so much! You saved my children! Please take this gift."
+    buttons:
+      - text: "Thank you!"
+        action: complete_quest
+
+reward:
+  items:
+    - id: simpletms:tm_helping_hand
+      quantity: 1

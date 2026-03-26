@@ -1,0 +1,60 @@
+id: ikuma_intro
+name: "The Ember Challenge"
+type: gym_intro
+description: "Meet Ikuma outside the gym to challenge her"
+
+npcs:
+  - id: ikuma
+    role: gym_leader
+    location: gym_entrance
+
+stages:
+  1:
+    name: "Find Ikuma"
+    description: "Find Ikuma outside the gym"
+    condition:
+      type: near_npc
+      npc: ikuma
+      radius: 5
+    dialog: intro
+    next: 2
+
+  2:
+    name: "Challenge Accepted"
+    dialog: accepted
+    action:
+      - type: unlock_gym
+        leader: ikuma
+    next: 3
+
+  3:
+    name: "Earn Your Badge"
+    condition:
+      type: gym_defeated
+      leader: ikuma
+    dialog: congrats
+    reward:
+      - type: advancement
+        id: league:gym/ikuma
+    final: true
+
+dialog:
+  intro:
+    text: "Oh! You found me! Ready for the Ember Challenge?"
+    buttons:
+      - text: "I'm ready!"
+        action: next_stage
+      - text: "Not yet"
+        action: close
+  
+  accepted:
+    text: "Great! Meet me inside the gym when you're ready to battle!"
+    buttons:
+      - text: "Will do!"
+        action: close
+  
+  congrats:
+    text: "You did it! The Ember Badge is yours!"
+    buttons:
+      - text: "Thank you!"
+        action: close

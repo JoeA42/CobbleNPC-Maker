@@ -1,10 +1,9 @@
-# src/menus/main_menu.py
 from src.menus.trainer_menu import trainer_menu
 from src.menus.leader_menu import leader_menu
 from src.menus.npc_menu import npc_menu
+from src.menus.quest_menu import quest_menu
 from src.utils.debug import clear_screen
 
-# src/menus/main_menu.py 
 def main_menu():
     while True:
         clear_screen()
@@ -15,7 +14,7 @@ def main_menu():
         print("  1. Trainer Operations")
         print("  2. Gym Leader Operations")
         print("  3. NPC Operations")
-        print("  4. Quest Operations")      # NEW
+        print("  4. Quest Operations")
         print("  5. Exit")
         print("-" * 60)
         
@@ -28,6 +27,9 @@ def main_menu():
         elif choice == "3":
             npc_menu()
         elif choice == "4":
-            quest_menu()  # NEW
+            quest_menu()
         elif choice == "5":
+            print("\nGoodbye!")
             break
+        else:
+            input("\nInvalid choice. Press Enter to continue...")

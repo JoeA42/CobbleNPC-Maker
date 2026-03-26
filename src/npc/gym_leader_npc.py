@@ -5,7 +5,7 @@ from config import GYM_LEADERS, get_gym_dialog
 from src.npc.trainer_npc import generate_uuids
 from src.npc.template import load_template
 
-def generate_gym_leader_snbt(leader_id, leader_info, template_dir="templates", output_dir="npcs/gym_leaders"):
+def generate_gym_leader_snbt(leader_id, leader_info, template_dir="source/templates", output_dir="outputs/npcs/gym_leaders"):
     """Generate an SNBT file for a gym leader"""
     name = leader_info["name"]
     skin_url = leader_info.get("skin_url", "")
@@ -125,7 +125,7 @@ def generate_gym_leader_snbt(leader_id, leader_info, template_dir="templates", o
     
     return output_path
 
-def generate_all_gym_leaders(template_dir="templates", output_dir="npcs/gym_leaders"):
+def generate_all_gym_leaders(template_dir="source/templates", output_dir="outputs/npcs/gym_leaders"):
     """Generate NPC files for all gym leaders"""
     from config import GYM_LEADERS
     

@@ -65,7 +65,7 @@
     "Name": "battle_start_novice",
     "Texts": [
       {
-        "Text": "Ready for a battle?"
+        "Text": "I'll go easy on you!"
       }
     ]
   },
@@ -83,7 +83,7 @@
     "Name": "battle_start_trainer",
     "Texts": [
       {
-        "Text": "Show me your strength!"
+        "Text": "I won't go easy on you!"
       }
     ]
   },
@@ -101,7 +101,7 @@
     "Name": "battle_start_ace",
     "Texts": [
       {
-        "Text": "I won't lose!"
+        "Text": "Prepare yourself!"
       }
     ]
   },
@@ -119,7 +119,7 @@
     "Name": "victory",
     "Texts": [
       {
-        "Text": "Great battle!"
+        "Text": "Well fought! You earned that win."
       }
     ]
   },
@@ -137,7 +137,7 @@
     "Name": "defeat",
     "Texts": [
       {
-        "Text": "Good effort!"
+        "Text": "Better luck next time."
       }
     ]
   }
@@ -227,10 +227,10 @@
       }]
     },
     OnGround:1b,
-    Owner:[I;-968872813,930792226,-599407332,1155719728],
+    Owner:[I;-1152896337,-1992432083,-912373372,-1456306210],
     PersistenceRequired:0b,
     Pos:[597.5d,78.0d,399.5d],
-    PresetUUID:[I;-16241582,98364930,976880655,66548431],
+    PresetUUID:[I;213708362,1950645982,1698027445,-1347093778],
     Profession:"NONE",
     Progression:{
       AttributeScalingEnabled:0b,
@@ -278,7 +278,7 @@
         Type:"NONE"
       }
     },
-    UUID:[I;-849449124,-2140805527,1020282750,-700832308],
+    UUID:[I;714477481,-1781675306,1692034672,1908018810],
     VariantType:"ALEX",
     attributes:[{
       base:0.0d,id:"minecraft:generic.attack_knockback"

@@ -67,3 +67,11 @@ Desktop.ini
 # Testing
 test_output/
 temp/
+# Generated outputs
+outputs/
+
+# Source files (these are manual templates, keep them)
+!source/
+
+# Generated outputs (ignore these)
+outputs/

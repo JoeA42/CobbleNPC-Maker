@@ -16,7 +16,7 @@ def generate_single_trainer(folder, subclass, name, base_rank):
     
     progression = generate_progression(base_rank)
     
-    output_dir = Path(f"trainers/regular/{folder}")
+    output_dir = Path(f"outputs/trainers/regular/{folder}")
     output_dir.mkdir(parents=True, exist_ok=True)
     
     team = None
