@@ -4,7 +4,8 @@
 			"path": "."
 		}
 	],
-	"settings": {
+	"settings": 
+	{
 		"workbench.colorCustomizations": {
 			"activityBar.activeBackground": "#986ec1",
 			"activityBar.background": "#986ec1",
@@ -24,6 +25,18 @@
 			"titleBar.inactiveBackground": "#7f4cb099",
 			"titleBar.inactiveForeground": "#e7e7e799"
 		},
-		"peacock.color": "7F4CB0"
+		"peacock.color": "7F4CB0",
+		
+		"python.analysis.diagnosticSeverityOverrides": {
+			"reportMissingImports": "none",
+			"reportMissingModuleSource": "none",
+			"reportUnboundVariable": "none"
+		},
+		"python.analysis.extraPaths": [
+			"./src",
+			"."
+		],
+		"python.linting.enabled": false,
+		"python.terminal.activateEnvironment": false
 	}
 }
