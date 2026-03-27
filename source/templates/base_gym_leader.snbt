@@ -537,23 +537,15 @@
       },
       Visible:{}
     },
-    Navigation:{
-      Home:{
-        X:-1459,
-        Y:68,
-        Z:-1722
-      }
-    },
+    Navigation:{},
     NeoForgeData:{},
     ObjectiveData:{
       HasObjectives:1b,
-      HasTravelTarget:1b,
+      HasTravelTarget:0b,
       ObjectiveDataSet:[{
         Prio:9,Type:"LOOK_AT_PLAYER"
       },{
         Prio:10,Type:"LOOK_AT_MOB"
-      },{
-        Prio:3,SpeedModifier:0.6d,Type:"MOVE_BACK_TO_HOME"
       },{
         Prio:9,Type:"LOOK_AT_RESET"
       }]

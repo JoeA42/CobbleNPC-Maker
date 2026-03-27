@@ -79,3 +79,20 @@ outputs/
 # Generated pool files (can be regenerated)
 config/pokemon_pools.json
 config/evolution_items.json
+# Environment variables
+.env
+.env.local
+
+# Backup directories
+.backup_*/
+.trash/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Output files (optional - uncomment if you don't want to commit outputs)
+# outputs/
+
+# SSHFS mount (if created locally)
+MCServer-local/

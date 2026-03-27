@@ -1,4 +1,4 @@
-# config.py
+# game_data.py
 RANKS = [
     {"badges": 0, "name": "novice", "level": 12, "stars": 0},
     {"badges": 1, "name": "rookie", "level": 20, "stars": 0},
@@ -443,14 +443,6 @@ GYM_DIALOGS = {
   },
     # Other gym leaders...
 }
-
-def get_gym_dialog(leader_id, dialog_type):
-    """Get a dialog line for a gym leader"""
-    if leader_id in GYM_DIALOGS and dialog_type in GYM_DIALOGS[leader_id]:
-        return GYM_DIALOGS[leader_id][dialog_type]
-    # Fallback
-    return f"{dialog_type} message for {leader_id}"
-
 
 def get_gym_dialog(leader_id, dialog_type):
     """Get a dialog line for a gym leader"""

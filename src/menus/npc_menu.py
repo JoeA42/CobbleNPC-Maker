@@ -1,6 +1,6 @@
 from src.npc.trainer_npc import generate_all_npcs, generate_for_trainer
 from src.npc.gym_leader_npc import generate_all_gym_leaders
-from src.utils.config_generator import generate_trainer_config
+from src.utils.trainer_config_generator import generate_trainer_config
 from src.utils.debug import clear_screen
 from source.game_data import FOLDERS
 
