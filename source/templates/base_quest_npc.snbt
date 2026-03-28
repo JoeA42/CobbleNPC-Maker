@@ -115,7 +115,7 @@
       }]
     },
     OnGround:1b,
-    Owner:[I;${owner_uuid}],
+    Owner:[I;0,0,0,0],
     PersistenceRequired:0b,
     Pos:[0,64,0],
     PresetUUID:[I;${preset_uuid}],
