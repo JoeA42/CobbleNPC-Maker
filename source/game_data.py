@@ -383,6 +383,72 @@ DIALOGS = {
         },
         "defeat": ["Another peak conquered!", "The mountain stands strong!", "Rock-solid victory!"],
         "victory": ["The mountain still challenges me...", "I'll climb higher next time...", "Rocky start, but I'll improve..."]
+    },
+    "ninja": {
+        "flavor": ["The silent blade strikes without warning!", "Darkness is my ally.", "You never saw me coming."],
+        "battle_start": {
+            "novice": ["I move like the wind!", "My training begins!", "Watch my swift strikes!"],
+            "rookie": ["I've trained in the shadows!", "Speed is my weapon!", "You won't catch me!"],
+            "apprentice": ["My techniques are improving!", "The ninja way guides me!", "Prepare for swift strikes!"],
+            "trainer": ["A ninja's power grows with each battle!", "Silent but deadly!", "My speed is unmatched!"],
+            "challenger": ["I have mastered the art of surprise!", "You won't see me coming!", "Feel the ninja's sting!"],
+            "pro": ["The shadows obey my command!", "I am one with darkness!", "Your moves are too slow!"],
+            "ace": ["I have reached peak ninja skill!", "My techniques are flawless!", "Face the ultimate ninja!"],
+            "elite": ["I am the shadow itself!", "No one escapes my blade!", "You face a master of stealth!"],
+            "master": ["I am the legendary ninja master!", "My skills transcend reality!", "None can match my speed!"]
+        },
+        "defeat": ["The shadows have spoken!", "My victory was inevitable!", "Another soul claimed by darkness!"],
+        "victory": ["My training continues...", "I must become faster...", "The shadows still call..."]
+    },
+
+    "birdkeeper": {
+        "flavor": ["Birds rule the skies!", "Soaring high is the best feeling!", "Watch my feathered friends fly!"],
+        "battle_start": {
+            "novice": ["My birds will peck you!", "Fly, my feathered friends!", "Up, up, and away!"],
+            "rookie": ["My birds are learning to soar!", "The sky's the limit!", "Feel the wind beneath my wings!"],
+            "apprentice": ["My birds are getting faster!", "They fly with precision!", "You'll be grounded soon!"],
+            "trainer": ["Witness true aerial combat!", "My birds dive with power!", "The skies belong to us!"],
+            "challenger": ["My flock is unstoppable!", "We command the heavens!", "You can't escape the sky!"],
+            "pro": ["I have mastered the winds!", "My birds strike like lightning!", "Grounded trainers have no chance!"],
+            "ace": ["The sky is my domain!", "My birds are legendary!", "Witness aerial supremacy!"],
+            "elite": ["I am the master of flight!", "My birds soar above all!", "No ground dweller can defeat me!"],
+            "master": ["I have become one with the sky!", "My birds are mythic creatures!", "The heavens bow to me!"]
+        },
+        "defeat": ["The sky has spoken!", "We reign supreme!", "Another victory for the birds!"],
+        "victory": ["My birds need more flight time...", "We'll fly higher next time!", "Back to the nest to train..."]
+    },
+
+    "medium": {
+        "flavor": ["I sense great potential in you...", "The spirits guide my path.", "Your aura is fascinating."],
+        "battle_start": {
+            "novice": ["The spirits whisper of your defeat!", "My psychic powers are awakening!", "I sense your weakness!"],
+            "rookie": ["My connection to the spirits grows!", "I see your moves before you make them!", "The other side guides me!"],
+            "apprentice": ["I have peered beyond the veil!", "Your fate is sealed!", "The spirits favor me!"],
+            "trainer": ["I commune with the beyond!", "Your every move is known to me!", "The unseen world empowers me!"],
+            "challenger": ["I channel powerful spirits!", "The other side grants me strength!", "You cannot hide from my sight!"],
+            "pro": ["I have become a conduit for spirits!", "My power transcends the physical!", "The ethereal world is my ally!"],
+            "ace": ["I speak with ancient spirits!", "My powers are legendary!", "You face a true mystic!"],
+            "elite": ["I have mastered the spirit realm!", "The dead whisper your defeat!", "My power is beyond comprehension!"],
+            "master": ["I am the bridge between worlds!", "Spirits and mortals bow to me!", "Witness true supernatural power!"]
+        },
+        "defeat": ["The spirits have chosen me!", "I foresaw this victory!", "My powers have prevailed!"],
+        "victory": ["The spirits grow quiet...", "I must strengthen my connection...", "The other side eludes me..."]
+    }, 
+    "bugcollector": {
+        "flavor": ["My collection grows!", "Every bug has its beauty!", "I've caught them all!"],
+        "battle_start": {
+            "novice": ["My bugs are rare!", "You'll love my collection!", "Watch my prized bugs!"],
+            "rookie": ["My collection is expanding!", "These bugs are special!", "Rare bugs incoming!"],
+            "apprentice": ["I've found the rarest bugs!", "My collection is legendary!", "Behold my prized insects!"],
+            "trainer": ["My bug collection is unmatched!", "Each bug is a treasure!", "Witness my rarest finds!"],
+            "challenger": ["I've collected bugs from every region!", "My collection is complete!", "You face a true collector!"],
+            "pro": ["My bugs are museum quality!", "The finest collection anywhere!", "These bugs are priceless!"],
+            "ace": ["I am the ultimate collector!", "My bugs are one of a kind!", "The collection is perfect!"],
+            "elite": ["Legends speak of my collection!", "These bugs are mythical!", "My collection is beyond compare!"],
+            "master": ["I have caught every bug in existence!", "My collection is divine!", "No one rivals my collection!"]
+        },
+        "defeat": ["My collection grows stronger!", "Another rare bug to add!", "The collection expands!"],
+        "victory": ["My collection needs work...", "I must find rarer bugs...", "The collection is incomplete..."]
     }
 }
 
@@ -3136,3 +3202,4 @@ POKEMON_POOLS = {
 
 
 }
+    
